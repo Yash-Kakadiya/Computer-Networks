@@ -1,0 +1,18 @@
+>en
+conf t
+vlan 20
+name students
+exit
+end
+
+show vlan brif
+
+interface range fa0/1
+
+switchport mode access
+
+switchport access vlan 20
+exit
+
+rang fa0/5
+switchport mode trunk
